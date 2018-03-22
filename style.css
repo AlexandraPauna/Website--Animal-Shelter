@@ -1,0 +1,876 @@
+html, * {
+	padding:0;
+	margin:0;
+}
+
+body{
+ font-family: HelveticaNeue-Light;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, ul, img {
+  margin:0px; 
+  padding:0px; 
+}
+
+/*stilizare headinguri*/
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2.5;
+  font-family:HelveticaNeue-Light;
+  font-style: italic;
+}
+
+#main {
+background: url(./poze/backg.jpg); 
+}
+
+#header {
+    padding-top: 7%; 
+    background-color: #DDDDDD;
+}
+
+/*logo-ul */
+#logo {
+    background: url(./poze/logo1-p.png) no-repeat;
+    min-height: 10vw;
+    min-width: 25vw;
+    width: 20%; 
+    float: left; 
+    margin-left: 8%;
+}
+
+#logo h1 {
+    display: none;
+}
+
+/* mesajul de langa logo*/
+#tagline {
+    float: left; 
+}
+
+#tagline h1 {
+font-size: 2.2rem; 
+color: #494158;
+padding-top: 10%;
+}
+
+/* meniul*/
+#wrapper-menu {
+  width: 100%;
+  display: inline-block;
+}
+
+ul.menu>li, ul.menu>li>ul.submenu>li, ul.menu span{
+    display:block;
+    font-size:2rem;
+    font-weight:bold;
+    height:2.5rem;
+    text-align:center;
+    line-height:2rem;
+    list-style-type:none;
+    overflow:hidden;
+    padding:0px;
+    margin:0px; 
+  }
+ ul.menu>li{
+    border-bottom: 0.2rem solid #494158;
+    border-top: 0.2rem solid #494158;
+}
+
+ul.menu>li>ul.submenu>li{
+      border-bottom: 0.2rem solid #494158;
+}
+
+ul.menu>li>ul.submenu>li:first-child{
+      border-top: 0.2rem solid #494158;
+}
+  
+ul.menu>li{
+   float:left;
+   width:25%;
+}
+
+ul.submenu>li{
+   width:100%;
+}
+  
+ul.menu>li>a,ul.submenu>li>a, ul.menu span{
+    display:block;
+    height: 100%;
+    text-decoration:none;
+    background:#737373;
+    color: #e6e6e6;
+}
+
+ul.menu>li>ul.submenu{
+    position:relative;
+    top:0;
+}
+
+ul.menu>li:hover{
+    overflow:visible;
+}
+
+ul.menu>li>a:hover, ul.submenu>li>a:hover, ul.menu>li>span:hover{
+    background:#ff99cc;
+}
+
+/*header*/
+header{
+ color: #737373; 
+ font-weight: bold;
+ font-size: 1.5rem;
+}
+
+/*footer*/
+footer{
+  background-color: #737373;
+  padding-left: 5%;
+  text-align: center;
+}
+
+footer p{
+  color: white; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+  padding-top: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  background-color: #fcedf3;
+  float: left;
+}
+
+#content h1{
+  color:#494158;
+  text-align:center;
+  font-size:3rem;
+}
+
+#content h2, #sidebar h2{
+    font-size: 2rem;
+    color: #615775; 
+}
+
+#content>p, #sidebar>p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+     font-family: HelveticaNeue-Light;
+}
+
+#content h3, #sidebar h3{
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: HelveticaNeue-Light;
+  color: #494158; 
+}
+
+/*pagina principala lista din header*/
+#header-list{
+  font-size: 1.2rem;
+  margin-left: 7%;
+  list-style-type: none;
+}
+
+ul#header-list li:before {
+   content: '⚜  ';
+}
+
+/* pagina principala slideshow-ul */
+@keyframes slider {
+
+0% {
+  left: 0;
+}
+10% {
+  left: 0;
+}
+12% {
+  left: -100%;
+}
+22% {
+  left: -100%;
+}
+24% {
+  left: -200%;
+}
+34% {
+  left: -200%;
+}
+36% {
+  left: -300%;
+}
+46% {
+  left: -300%;
+}
+48% {
+  left: -400%;
+}
+58% {
+  left: -400%;
+}
+60% {
+  left: -300%;
+}
+70% {
+  left: -300%;
+}
+72% {
+  left: -200%;
+}
+82%{
+  left: -200%
+}
+84%{
+  left: -100%
+}
+94%{
+  left: -100%
+}
+96%{
+  left: 0;
+}
+}
+
+#slider {
+  overflow: hidden; /*le dispune treptat */
+  margin: 5%;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+  animation: 20s slider infinite; 
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+  height: 30vw;
+}
+
+/*pagina principala cele 3 coloane*/
+#princ p{
+  
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+#col1{
+  width: 30%;
+  float:left;
+  margin: 1.2%;
+  text-align: center;
+}
+
+#col2{
+  width: 30%;
+  float:left;
+  margin: 1.2%;
+  text-align: center;
+}
+
+#col3{
+  width: 30%;
+  float:left;
+  margin: 1.2%;
+  text-align: center;
+}
+
+#col1 h2, #col2 h2, #col3 h2{
+  color:#494158;
+  font-size:1.5rem;
+}
+
+#col2 span, #col3 span{
+  background: #615775;
+  color: white;
+  border:0.1rem solid black;
+}
+
+.animalul-saptamanii{
+  max-width: 14vw;
+  display: block;
+  margin: 0 auto; 
+}
+
+/*pagina principala video*/
+video {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+/*tabelul cu programul de la pagina despre*/
+table#tabel-program {
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(#a6a6a6,#737373);
+   border-radius: 0.5em;
+   overflow: hidden;
+}
+
+ table#tabel-program caption{
+  text-transform: uppercase;
+}
+
+ table#tabel-program thead{
+    display: none;
+}
+
+ table#tabel-program tr td:first-child{
+  color: #ffb3da;
+  font-weight: bold;
+}
+
+ table#tabel-program tr td:nth-child(n+2){
+  color: white;
+  text-align: center;
+}
+
+ ul#info-contact{
+  list-style: none; 
+}
+
+#program, #informatii, #locatie{
+  margin: 3%;
+}
+
+ul#info-contact li span{
+  color: #990066;
+}
+
+#locatie iframe {
+  width: 90%;
+}
+
+/*pag caini si pisici*/
+.poza-animal {
+  display: block;
+   margin: 0 auto; 
+   width: 70%;
+   height: 25rem;
+}
+
+.date-animale{
+  margin-bottom: 30%;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 5%;
+  color: #282724;
+}
+
+/*lista si aside*/
+.stanga{
+  float: left;
+  width: 40%;
+  background-color: #f3bed3;
+  max-height: 100%;
+}
+
+.stanga li:nth-child(even){
+  background: #f7d4e2;
+}
+
+.stanga ul li{
+  
+  display: flex;
+  list-style: none;
+}
+
+.tip{
+  width: 50%;
+  margin-right: 20%;
+  color: #5f5d56;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.continut{
+  width:50%;
+  display: block;
+}
+
+aside{
+  text-align: center;
+}
+
+/*scurta poveste a animalului*/
+.dreapta{
+  float: right;
+   width: 60%;
+   text-align: center;
+   background: #f7d4e2;
+   max-height: 70%;
+
+}
+
+.dreapta>p{
+  font-size: 1.2rem;
+  text-align:center;
+}
+
+/*pagina suport lista tip protector*/
+ul#rang {
+   list-style: none;
+}
+
+ul#rang li{
+  text-align: center;
+  width: 20%;
+  border: 1px solid black;
+  margin-bottom: -1px;
+  margin-left: 8%;
+  font-weight: bold;
+}
+
+ul#rang li:first-child{
+  color: #cc6600;
+}
+
+ul#rang li:nth-child(2){
+  color: #476b6b;
+}
+
+ul#rang li:nth-child(3){
+  color: #663d00;
+}
+
+/*animatia de la pagina suport*/
+#animatie-caine{
+  width: 50vw;
+  height: 25vw;
+  border: #493125 1rem inset;
+  background: gray;
+  overflow: hidden;
+  position: relative;
+  margin: 5vw auto;
+}
+
+#corp {
+  background: #333;
+}
+
+#cap {
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
+  background: #644437;
+  left: 25vw;
+  top: 2vw;
+}
+
+#nas {
+  position: absolute;
+  top: 5vw;
+  left: -4vw;
+  background: #644437;
+  width: 9vw;
+  height: 5vw;
+  border-radius: 0 0 0 5vw;
+}
+
+#nas::after {
+  position: absolute;
+  background: black;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 0.5vw;
+  content: '';
+  display: block;
+  top: -0.5vw;
+  left: -0.5vw;
+}
+
+#ureche {
+  background: #644437;
+  width: 4vw;
+  height: 6vw;
+  position: absolute;
+  top: 4vw;
+  right: 2vw;
+  border-radius: 0 0 0 4vw;
+  border-left: 0.3vw solid #493125;
+}
+
+#corp-caine {
+  width: 11vw;
+  position: absolute;
+  height: 12vw;
+  background:  #644437;
+  border-radius: 0 15vw 0 0;
+  top: 11vw;
+  left: 27vw;
+}
+
+#corp-caine::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #f8a643;
+  top: 1vw;
+  width: 6vw;
+  height: 1.5vw;
+  border-radius: 0 15vw 0 0;
+}
+
+#corp-caine::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0.8vw;
+  height: 0.8vw;
+  background: white;
+  left: -0.8vw;
+  top: 1.5vw;
+  border-radius: 0.5vw;
+  z-index: 3;
+}
+
+#picior {
+  position: absolute;
+  width: 5vw;
+  height: 2.5vw;
+  background: #644437;
+  top: 9.5vw;
+  left: -2vw;
+  border-radius: 2.5vw 2.5vw 0 0;
+}
+
+#picior::before {
+  display: block;
+  content: '';
+  position: absolute;
+  bottom:2.3vw;
+  left: 2vw;
+  height: 5vw;
+  width: 2vw;
+  background: #493125;
+  border-radius: 0 2vw 0 0 ;
+}
+
+#coada {
+  position: absolute;
+  width: 3vw;
+  height: 10vw;
+  background: #493125;
+  right: -2vw;
+  z-index: 2;
+  border-radius: 0 5vw 5vw 0 / 0 10vw 10vw 0;
+}
+
+#minge{
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 5vw;
+  background: #990033;
+  left: 17vw;
+  top: 20vw;
+  animation-name: miscare_minge;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes miscare_minge{
+   0%{
+    left: -5vw;
+    top: 20vw;
+  }
+
+  25%{
+    left: 5vw;
+    top: 10vw; 
+  }
+
+  50%{
+    left: 8vw;
+    top: 20vw; 
+  }
+
+  75%{
+    left: 12vw;
+    top: 14vw; 
+  }
+
+  90%{
+    left: 15vw;
+    top: 20vw; 
+  }
+
+  100%{
+    left: 17vw;
+    top: 20vw; 
+  }
+
+}
+
+@media screen and (min-width:800px){
+   .container {
+    width: 57%;
+    margin: 0 auto;
+    overflow: auto; 
+    }
+
+    /*pagina despre informatiile pt ecran mare*/
+    #sidebar {
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 59%;
+    padding: 1.3%;
+    background-color: #f7d4e2;
+    border-radius: 2em;
+    max-width: 15vw;
+  }
+
+   ul#info-contact li a{
+     font-size: 1.1vw
+  }
+
+/*pagina caini si pisici povestea si aside pt ecran mare*/
+  .stanga{
+    height: 11rem;
+    overflow: scroll;
+  }
+
+   .dreapta{
+    height: 11rem;
+    overflow: scroll;
+   }
+
+}
+@media screen and (min-width:480px) and (max-width:800px){
+   .container {
+    width: 70%;
+    margin: 0 auto;
+    overflow: auto; 
+    }
+
+    #logo {
+    min-height: 10rem;
+    min-width: 15.5rem;
+   }
+
+   #content p, #sidebar p{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    }
+
+   #sidebar {
+    padding: 1.3%;
+    background-color: #f7d4e2;
+    border-radius: 2em;
+   }
+   
+   /*va aparea doar sigla */
+   #tagline{
+    display: none;
+   }
+
+   /*meniul ecran mediu*/
+   ul.menu>li{
+     width:50%;
+    }
+
+    ul.menu>li>span:hover ul.submenu{
+      width:100vw;
+      position:absolute;
+      left:0;
+      border-top:0.1rem solid magenta;
+      border-bottom:0.1rem solid black;
+    }
+    
+    ul.menu>span:hover ul.submenu>li{
+      float:left;
+      width:25%;
+      border:none;
+
+   }
+   
+   /*cele 3 coloane de pe pag principala */
+   #princ p{
+    font-size: 0.9rem;
+    line-height: 1.2;
+   }
+
+   #col1{
+    width: 100%;
+    float:left;
+    margin: 1.2%;
+    text-align: center;
+   }
+
+   #col2{
+    width: 45%;
+    float:left;
+    margin: 1.2%;
+    text-align: center;
+   }
+
+   #col3{
+    width: 45%;
+    float:left;
+    margin: 1.2%;
+    text-align: center;
+  }
+
+  .animalul-saptamanii{
+      max-width: 30vw; 
+   }
+/*pagina caini si pisici aside si poveste pt ecran mediu*/
+  .stanga{
+    width: 100%;
+   }
+
+   .dreapta{
+    width: 100%;
+   }
+
+   .poza-animal {
+      width: 70%;
+      height: 14rem;
+   }
+
+/*pagina suport tipurile de protectori*/
+   ul#rang li{
+    text-align: center;
+    width: 40%;
+    border: 1px solid black;
+    margin-bottom: -1px;
+    margin-left: 8%;
+    font-weight: bold;
+   }
+
+}
+
+/*ecran mic*/
+@media screen and (max-width:480px){
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto; 
+    }
+    
+    #sidebar {
+    padding: 1.3%;
+    background-color: #f7d4e2;
+    border-radius: 2em;
+   }
+   
+   #logo {
+    min-height: 10rem;
+    min-width: 15.5rem;
+   }
+
+   #content p, #sidebar p{
+    font-size: 1rem;
+    line-height: 1.3;
+    }
+
+   #tagline{
+    display: none;
+   }
+
+   /*meniul ecran mic (la fel ca la mediu)*/
+   ul.menu>li{
+     width:50%;
+    }
+
+    ul.menu>li>span:hover ul.submenu{
+      width:100vw;
+      position:absolute;
+      left:0;
+      border-top:0.1rem solid magenta;
+      border-bottom:0.1rem solid black;
+    }
+    
+    ul.menu>span:hover ul.submenu>li{
+      float:left;
+      width:25%;
+      border:none;
+   }
+   #slider figure img {
+      height: 9rem;
+   }
+   
+   #princ p{
+    font-size: 0.9rem;
+    line-height: 1.2;
+   }
+
+  /*pagina principala*/
+  .animalul-saptamanii{
+      max-width: 50vw;
+   }
+
+   #col1{
+    width: 100%;
+    float:left;
+    margin: 1%;
+    text-align: center;
+   }
+
+   #col2{
+    width: 100%;
+    float:left;
+    margin: 1%;
+    text-align: center;
+   }
+
+   #col3{
+    width: 100%;
+    float:left;
+    margin: 1%;
+    text-align: center;
+  }
+
+  /*pagina despre tabel program*/
+  table#tabel-program thead tr th, table#tabel-program caption{
+    display: none;
+  }
+
+  table#tabel-program tbody,tr {
+  display: block; 
+  }
+  
+  table#tabel-program th, td { 
+  display: block; 
+  border:1px solid black;
+  padding:0.3em;
+}
+
+table#tabel-program td+td, table#tabel-program th+th { 
+  border-top:none;
+}
+
+ /*pagina caini si pisici povestea si aside*/
+ .stanga{
+    width: 100%;
+  }
+
+  .dreapta{
+    width: 100%;
+  }
+
+  .poza-animal {
+   width: 70%;
+   height: 12rem;
+  }
+
+/*pagina suport*/
+  ul#rang li{
+    text-align: center;
+    width: 60%;
+    border: 1px solid black;
+    margin-bottom: -1px;
+    margin-left: 8%;
+    font-weight: bold;
+   }
+
+}
